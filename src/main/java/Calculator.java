@@ -73,10 +73,10 @@ public class Calculator
   return t;
  }
 
- public boolean cubosAlgarismos(double num)
+ public boolean cubosAlgarismos(int num)
  {
   boolean flag = false;
-  double alg, copia, soma;
+  int alg, copia, soma;
   copia = num;
   soma = 0;
   while (num > 0)
@@ -110,30 +110,24 @@ public class Calculator
   return result;
  }
 
- /**
-  * 10) Verifica se um número é primo ou não
-  *
-  * @param number número a verificar
-  * @return true se for primo, false se não for primo
-  */
- public boolean isPrime(int number)
- {
-  boolean flag = true;
-  int x = 2;
-  while (number % x != 0 && x <= number / 2)
-  {
-   x = x + 1;
-  }
-  if (x < number / 2)
-  {
-   flag = false;
-   return flag;
-  } else
-  {
-   return flag;
-  }
- }
 
+    /**
+     * 10) Verifica se um número é primo ou não
+     *
+     * @param number número a verificar
+     * @return true se for primo, false se não for primo
+     */
+    public boolean isPrime(int number) {
+        boolean flag = true;
+        int x = 2;
+        while (number % x != 0 && x <= number / 2) {
+            x = x + 1;
+        }
+        if (x < number / 2) {
+            flag = false;
+        }
+        return flag;
+    }
 
  /**
   * 12) Converte um número inteiro decimal para o seu equivalente binário
@@ -146,6 +140,17 @@ public class Calculator
   String binary = ConversionUtils.decimalToBinary(number);
   saveLastResult(Integer.parseInt(binary));
   return Integer.parseInt(binary);
+ }
+
+ /**
+  * 12) Converte um número inteiro decimal para o seu equivalente binário
+  *
+  * @param x o número a converter
+  * @return o seu equivalente em binário
+  */
+ public String converteDecimalParaHexa (int x)
+ {
+  return ConversionUtils.decimalToHex (x);
  }
 
 

@@ -78,7 +78,7 @@ public class MainCalculator
                     double x ;
                     System.out.println("**** Verificar se o numero é a soma dos cubos dos digitos que o compõem ******");
                     x = populateFirst();
-                    System.out.println(calc.cubosAlgarismos(x));
+                    System.out.println(calc.cubosAlgarismos((int)x));
                 }
 
                 case 10 -> {
@@ -88,8 +88,21 @@ public class MainCalculator
                     System.out.println(calc.convertToBinary((int) x));
                 }
 
+                case 11 -> {
+                    double x ;
+                    System.out.println("**** Converter número binário para decimal ******");
+                    x = populateFirst();
+                    System.out.println (calc.binaryToDecimal ((int) x));
 
 
+                }
+
+                case 12 -> {
+                    double x ;
+                    System.out.println("**** Converter número decimal para hexadecimal ******");
+                    x = populateFirst();
+                    System.out.println(calc.converteDecimalParaHexa ((int) x));
+                }
             }
         }
     }
@@ -109,9 +122,9 @@ public class MainCalculator
         System.out.println("7-Calcular fatorial de um numero inteiro");
         System.out.println("8-Verificar se um numero é primo");
         System.out.println("9-Verificar se o numero é a soma dos cubos dos digitos que o compõem");
-        //System.out.println("10-Converter numero decimal para binário");
-        //System.out.println("11-Converter número binário para decimal");
-        //System.out.println("12-Converter número decimal para hexadecimal");
+        System.out.println("10-Converter numero decimal para binário");
+        System.out.println("11-Converter número binário para decimal");
+        System.out.println("12-Converter número decimal para hexadecimal");
         System.out.println("Escolha a operação");
         
     }
