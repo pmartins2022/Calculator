@@ -59,12 +59,18 @@ public class Calculator {
   return lastResultValue;
  }
 
-
- public double somar(double x, double y)
+    /**
+     * Calcula a soma de dois numeros
+     * @param n1 numero fornecid em primeiro lugar
+     * @param n2 numero fornecido em segundo lugar
+     * @return soma de n1 e n2
+     */
+ public double somar(double n1, double n2)
  {
      double soma;
-     soma = x+y;
-  return soma;
+     soma = n1+n2;
+     this.lastResultValue = soma;
+     return soma;
  }
 
  public void apagarResultado()
