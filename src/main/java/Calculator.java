@@ -73,4 +73,9 @@ public class Calculator
   return t;
  }
 
+ public String converteDecimalParaHexadecimal (int x)
+ {
+  return ConversionUtils.decimalToHex (x);
+ }
+
 }
