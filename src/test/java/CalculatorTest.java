@@ -4,22 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest
 {
-<<<<<<< HEAD
     Calculator calc = new Calculator ();
 
-    @Test
-    void testSoma ()
-    {
-        double y, x, expected, actual;
-        x = 10;
-        y = 5;
-        expected = 15;
-        actual = calc.somar (x, y);
-        assertEquals (expected, actual);
-    }
-=======
- Calculator calc = new Calculator();
->>>>>>> 27a1017c41d7f8d04dcdc2480696ff6d83f36ba9
 
  @Test
  void testGetLastResultValue()
@@ -112,10 +98,6 @@ class CalculatorTest
   assertEquals(-120, result);
  }
 
-<<<<<<< HEAD
-        assertEquals(-120, result);
-    }
-
     @Test
     void testProduto (){
         double n1,n2,expected, actual;
@@ -155,6 +137,24 @@ class CalculatorTest
         actual = calc.subtracao(n1,n2);
         assertEquals(expected,actual);
     }
-=======
->>>>>>> 27a1017c41d7f8d04dcdc2480696ff6d83f36ba9
+
+    @Test
+    void testCubosAlgarismosFalse (){
+        int n1;
+        boolean expected, actual;
+        n1 = 100;
+        expected = false;
+        actual = calc.cubosAlgarismos(n1);
+        assertEquals(expected,actual);
+    }
+
+    @Test
+    void testCubosAlgarismosTrue (){
+        int n1;
+        boolean expected, actual;
+        n1 = 153;
+        expected = true;
+        actual = calc.cubosAlgarismos(n1);
+        assertEquals(expected,actual);
+    }
 }
