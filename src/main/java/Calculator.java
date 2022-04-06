@@ -72,10 +72,38 @@ public class Calculator
   saveLastResult(t);
   return t;
  }
-
  public String converteDecimalParaHexadecimal (int x)
  {
   return ConversionUtils.decimalToHex (x);
  }
+ public boolean isPrime(int number)
+ {
+  boolean flag = true;
+  int x = 2;
+  while (number % x != 0 && x <= number / 2)
+  {
+   x = x + 1;
+  }
+  if (x < number / 2)
+  {
+   flag = false;
+   return flag;
+  } else
+  {
+   return flag;
+  }
 
+  /**
+   * Calcula a potência do valor recebido pela variável x
+   *
+   * @param x número
+   * @param y potência
+   * @return potência do número
+   */
+  public double potencia(double x, int y)
+  {
+   double z = Math.pow(x, y);
+   saveLastResult(z);
+   return z;
+  }
 }
