@@ -36,7 +36,6 @@ class CalculatorTest
   assertEquals(expectedResult, result);
  }
 
-
  @Test
  void convertToBinary()
  {
@@ -74,6 +73,32 @@ class CalculatorTest
 
   //Act
   double result = calc.potencia(3, 3);
+
+  //Assert
+  assertEquals(result, expectedResult);
+ }
+
+ @Test
+ void testPotenciaNegativo()
+ {
+  //Arrange
+  double expectedResult = 0.037037037037037035;
+
+  //Act
+  double result = calc.potencia(3, -3);
+
+  //Assert
+  assertEquals(result, expectedResult);
+ }
+
+ @Test
+ void testPotenciaZeroValue()
+ {
+  //Arrange
+  double expectedResult = 1;
+
+  //Act
+  double result = calc.potencia(3, 0);
 
   //Assert
   assertEquals(result, expectedResult);
