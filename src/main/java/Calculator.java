@@ -100,19 +100,7 @@ public class Calculator {
         }
     }
 
-
-<<<<<<< HEAD
-    /**
-     * 12) Converte um número inteiro decimal para o seu equivalente binário
-     *
-     * @param number o número a converter
-     * @return o seu equivalente em binário
-     */
-    public int convertToBinary(int number) {
-        String binary = ConversionUtils.decimalToBinary(number);
-        return Integer.parseInt(binary);
-    }
-=======
+    
  /**
   * 12) Converte um número inteiro decimal para o seu equivalente binário
   *
@@ -125,7 +113,6 @@ public class Calculator {
   saveLastResult(Integer.parseInt(binary));
   return Integer.parseInt(binary);
  }
->>>>>>> 93eb53c7f41d59e4939d17164b968b0aae5f5b40
 
 
     /**
