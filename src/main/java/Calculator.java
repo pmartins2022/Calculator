@@ -148,6 +148,17 @@ public class Calculator
   return Integer.parseInt(binary);
  }
 
+ /**
+  * 12) Converte um número inteiro decimal para o seu equivalente binário
+  *
+  * @param x o número a converter
+  * @return o seu equivalente em binário
+  */
+ public String converteDecimalParaHexa (int x)
+ {
+  return ConversionUtils.decimalToHex (x);
+ }
+
 
  /**
   * Calcula a potência do valor recebido pela variável x

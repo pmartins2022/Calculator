@@ -88,8 +88,21 @@ public class MainCalculator
                     System.out.println(calc.convertToBinary((int) x));
                 }
 
+                case 11 -> {
+                    double x ;
+                    System.out.println("**** Converter número binário para decimal ******");
+                    x = populateFirst();
+                    System.out.println (calc.binaryToDecimal ((int) x));
 
 
+                }
+
+                case 12 -> {
+                    double x ;
+                    System.out.println("**** Converter número decimal para hexadecimal ******");
+                    x = populateFirst();
+                    System.out.println(calc.converteDecimalParaHexa ((int) x));
+                }
             }
         }
     }
