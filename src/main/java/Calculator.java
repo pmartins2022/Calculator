@@ -68,7 +68,7 @@ public class Calculator {
  public boolean cubosAlgarismos (double num)
  {
     boolean flag = false;
-    int alg, copia, soma;
+    double alg, copia, soma;
     copia = num;
     soma = 0;
     while (num > 0)
