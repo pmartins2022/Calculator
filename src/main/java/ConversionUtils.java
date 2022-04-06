@@ -18,4 +18,18 @@ public class ConversionUtils
     {
         return Integer.parseInt(String.valueOf(number),2);
     }
+
+    public static boolean isPrime(int number){
+        boolean flag = true;
+        int x=2;
+        while(number%x != 0 && x <= number/2){
+            x=x+1;
+        }
+        if(x<number/2){
+            flag = false;
+            return flag;
+        }else{
+            return flag;
+        }
+    }
 }

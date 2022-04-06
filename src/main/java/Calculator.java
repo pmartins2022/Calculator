@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Calculator {
 
     private double lastResultValue;
@@ -18,7 +17,7 @@ public class Calculator {
         return lastResultValue;
     }
 
-    
+
     public double produto (double n1, double n2){
         double prod;
         prod=n1*n2;
