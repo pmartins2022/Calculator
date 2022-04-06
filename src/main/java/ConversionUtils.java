@@ -18,5 +18,5 @@ public class ConversionUtils
     {
         return Integer.parseInt(String.valueOf(number),2);
     }
-    
+
 }

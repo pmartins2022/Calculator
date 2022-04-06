@@ -19,7 +19,7 @@ public class Calculator {
      * Guarda resultado da operação na variável last resultValue
      * @param lastResultValue resultado da última operação
      */
-    public void memorizarResultadoOperacao(double lastResultValue) {
+    public void memorizeLastResult(double lastResultValue) {
         this.lastResultValue = lastResultValue;
     }
 
