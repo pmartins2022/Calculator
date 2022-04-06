@@ -6,9 +6,18 @@ public class BinaryNumber {
     }
 
 
-    public int sumBinaries(int number) {
-        return this.value+number;
+    public int getValue() {
+        return value;
     }
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+
+    public int sumBinaries(BinaryNumber number) {
+        return Integer.parseInt(Integer.toBinaryString(this.value))+Integer.parseInt(Integer.toBinaryString(number.getValue()));
+    }
+
 
 }
 
