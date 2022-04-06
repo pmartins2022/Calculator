@@ -1,0 +1,35 @@
+Sprint nº1
+Criar Repositório  -Pedro
+Criar Projeto- Pedro
+Menu 	-Paulo (7)
+1	-Zé
+2	-Miguel
+3	-Miguel
+4	-Sérgio
+5	-Simão
+6	-Marta
+7	-Zé
+
+Reunião de fim de Sprint1
+{
+Conflitos
+}
+
+Sprint nº2
+Menu	- Paulo
+8	- Marta 
+9	- Pedro
+10	- Simao
+11	- Miguel
+
+12	- Simao
+13	- Marta
+14	- Zé
+
+Reunião de fim de Sprint2
+{
+
+}
+
+Sprint nº3
+null
