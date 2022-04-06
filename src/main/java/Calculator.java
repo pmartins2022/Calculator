@@ -81,7 +81,7 @@ public class Calculator {
     }
 
     /**
-     * Verifica se um número é primo ou não
+     * 10) Verifica se um número é primo ou não
      *
      * @param number número a verificar
      * @return true se for primo, false se não for primo
@@ -102,7 +102,7 @@ public class Calculator {
 
 
     /**
-     * Converte um número inteiro decimal para o seu equivalente binário
+     * 12) Converte um número inteiro decimal para o seu equivalente binário
      *
      * @param number o número a converter
      * @return o seu equivalente em binário
