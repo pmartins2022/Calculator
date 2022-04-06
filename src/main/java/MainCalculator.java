@@ -74,12 +74,7 @@ public class MainCalculator
                     System.out.println(calc.isPrime((int) x));
                 }
 
-                case 9 -> {
-                    double x ;
-                    System.out.println("**** Verificar se número Inteiro é primo ******");
-                    x = populateFirst();
-                    System.out.println(calc.isPrime((int) x));
-                }
+
 
 
             }
