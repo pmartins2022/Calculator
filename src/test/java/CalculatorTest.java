@@ -96,4 +96,5 @@ class CalculatorTest
 
   assertEquals(-120, result);
  }
+
 }
