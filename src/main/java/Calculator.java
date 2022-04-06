@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-    /**
-     * Calcula o Produto de dois numeros
-     * @param n1 numero fornecido em primeiro lugar
-     * @param n2 numero fornecido em segundo lugar
-     * @return produto de n1 com n2
-     */
-=======
+
+
 public class Calculator {
 
     private double lastResultValue;
@@ -27,12 +20,18 @@ public class Calculator {
         return lastResultValue;
     }
 
-    
->>>>>>> 8fd0c3b69099a73c91209cccdda5d88b7279da90
+
+    /**
+     * Calcula o Produto de dois numeros
+     * @param n1 numero fornecido em primeiro lugar
+     * @param n2 numero fornecido em segundo lugar
+     * @return produto de n1 com n2
+     */
     public double produto (double n1, double n2){
         double prod;
         prod=n1*n2;
-        return prod;
+        this.lastResultValue=prod;
+        return prod
     }
 
     /**
@@ -44,19 +43,8 @@ public class Calculator {
     public double subtracao (double n1, double n2){
         double sub;
         sub=n1-n2;
+        this.lastResultValue = sub;
         return sub;
     }
-<<<<<<< HEAD
 
-    private double lastResultValue;
-
- /**
-  Pessoal pode ser assim? No final de cada método onde ocorreu uma conta é só fazer this.lastResultValue = resulatado
-  */
-    public double getLastResultValue()
-    {
-        return lastResultValue;
-    }
-=======
->>>>>>> 8fd0c3b69099a73c91209cccdda5d88b7279da90
 }
