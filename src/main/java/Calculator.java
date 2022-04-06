@@ -88,7 +88,7 @@ public class Calculator {
 
     /**
      * Calcula a soma de dois numeros
-     * @param n1 numero fornecid em primeiro lugar
+     * @param n1 numero fornecido em primeiro lugar
      * @param n2 numero fornecido em segundo lugar
      * @return soma de n1 e n2
      */
