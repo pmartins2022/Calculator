@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Hexadecimal {
 
-    String num;
+    private String num;
     
     private static final int sizeOfIntInHalfBytes = 8;
     private static final int numberOfBitsInAHalfByte = 4;
