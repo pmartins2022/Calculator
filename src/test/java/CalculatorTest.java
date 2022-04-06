@@ -66,6 +66,19 @@ class CalculatorTest
  }
 
  @Test
+ void testQuociente()
+ {
+  //Arrange
+  double expectedResult = 1;
+
+  //Act
+  double result = calc.potencia(3, 0);
+
+  //Assert
+  assertEquals(result, expectedResult);
+ }
+
+ @Test
  void testPotencia()
  {
   //Arrange
