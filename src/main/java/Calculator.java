@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -8,12 +10,14 @@
      * @return produto de n1 com n2
      */
 =======
+>>>>>>> bbcbcaf107b9bd417e299af6c0352887f820db8d
 public class Calculator {
 
     private double lastResultValue;
 
     /**
      * Guarda resultado da operação na variável last resultValue
+     * @param lastResultValue resultado da última operação
      */
     public void memorizarResultadoOperacao(double lastResultValue) {
         this.lastResultValue = lastResultValue;
@@ -27,8 +31,12 @@ public class Calculator {
         return lastResultValue;
     }
 
+<<<<<<< HEAD
+
+=======
     
 >>>>>>> 8fd0c3b69099a73c91209cccdda5d88b7279da90
+>>>>>>> bbcbcaf107b9bd417e299af6c0352887f820db8d
     public double produto (double n1, double n2){
         double prod;
         prod=n1*n2;
