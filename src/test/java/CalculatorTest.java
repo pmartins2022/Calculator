@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class CalculatorTest {
 
     Calculator calc = new Calculator();
@@ -34,11 +35,10 @@ class CalculatorTest {
     @Test
     void convertToBinary() {
         //Arrange
-        Calculator calculadora = new Calculator();
         int expectedResult = 1001;
 
         //Act
-        int result = calculadora.convertToBinary(9);
+        int result = calc.convertToBinary(9);
 
         //Assert
         assertEquals(expectedResult, result);
@@ -169,37 +169,6 @@ class CalculatorTest {
         n2 = 2.25f;
         expected = 1.75f;
         actual = calc.subtracao(n1, n2);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    void testConverteDecimalParaHexa() {
-        int x;
-        String expected, actual;
-        x = 14;
-        expected = "e";
-        actual = calc.converteDecimalParaHexa(x);
-        assertEquals(expected, actual);
-    }
-
-
-    @Test
-    void testCubosAlgarismosFalse() {
-        int n1;
-        boolean expected, actual;
-        n1 = 100;
-        expected = false;
-        actual = calc.cubosAlgarismos(n1);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    void testCubosAlgarismosTrue() {
-        int n1;
-        boolean expected, actual;
-        n1 = 153;
-        expected = true;
-        actual = calc.cubosAlgarismos(n1);
         assertEquals(expected, actual);
     }
 }
