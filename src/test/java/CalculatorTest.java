@@ -6,53 +6,60 @@ class CalculatorTest
 {
  Calculator calc = new Calculator();
 
-    @Test
-    void isPrime() {
-        //Arrange
-        Calculator calculadora = new Calculator();
-        boolean expectedResult=true;
+ @Test
+ void isPrime()
+ {
+  //Arrange
+  Calculator calculadora = new Calculator();
+  boolean expectedResult = true;
 
-        //Act
-        boolean result = calculadora.isPrime(13);
+  //Act
+  boolean result = calculadora.isPrime(13);
 
-        //Assert
-        assertEquals(expectedResult, result);
-    }
-    @Test
-    void isPrime2() {
-        //Arrange
-        Calculator calculadora = new Calculator();
-        boolean expectedResult=false;
+  //Assert
+  assertEquals(expectedResult, result);
+ }
 
-        //Act
-        boolean result = calculadora.isPrime(14);
+ @Test
+ void isPrime2()
+ {
+  //Arrange
+  Calculator calculadora = new Calculator();
+  boolean expectedResult = false;
 
-        //Assert
-        assertEquals(expectedResult, result);
-    }
+  //Act
+  boolean result = calculadora.isPrime(14);
+
+  //Assert
+  assertEquals(expectedResult, result);
+ }
 
 
-    @Test
-    void convertToBinary() {
-        //Arrange
-        Calculator calculadora = new Calculator();
-        int expectedResult = 1001;
+ @Test
+ void convertToBinary()
+ {
+  //Arrange
+  Calculator calculadora = new Calculator();
+  int expectedResult = 1001;
 
-        //Act
-        int result = calculadora.convertToBinary(9);
+  //Act
+  int result = calculadora.convertToBinary(9);
 
-        //Assert
-        assertEquals(expectedResult, result);
-    }
+  //Assert
+  assertEquals(expectedResult, result);
+ }
+
+
  @Test
  void testGetLastResultValue()
  {
   //Arrange
+  calc.apagarResultado();
+  double expectedResult = 0;
 
   //Act
-  calc.apagarResultado();
   double result = calc.getLastResultValue();
-  double expectedResult = 0;
+
   //Assert
   assertEquals(result, expectedResult);
  }
@@ -61,10 +68,11 @@ class CalculatorTest
  void testPotencia()
  {
   //Arrange
+  double expectedResult = 27;
 
   //Act
   double result = calc.potencia(3, 3);
-  double expectedResult = 27;
+
   //Assert
   assertEquals(result, expectedResult);
  }
@@ -73,10 +81,11 @@ class CalculatorTest
  void testBinaryToDecimal()
  {
   //Arrange
+  double expectedResult = 4;
 
   //Act
   double result = calc.binaryToDecimal(100);
-  double expectedResult = 4;
+
   //Assert
   assertEquals(result, expectedResult);
  }
