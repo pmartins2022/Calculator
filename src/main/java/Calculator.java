@@ -81,4 +81,9 @@ public class Calculator {
     }
 
 
+    public int convertToBinary(int number){
+        String binary = ConversionUtils.decimalToBinary(number);
+        return Integer.parseInt(binary);
+    }
+
 }
