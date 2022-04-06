@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest
 {
+<<<<<<< HEAD
     Calculator calc = new Calculator ();
 
     @Test
@@ -16,35 +17,102 @@ class CalculatorTest
         actual = calc.somar (x, y);
         assertEquals (expected, actual);
     }
+=======
+ Calculator calc = new Calculator();
+>>>>>>> 27a1017c41d7f8d04dcdc2480696ff6d83f36ba9
 
-    @Test
-    void testConverteDecimalParaHexa ()
-    {
-        int x;
-        String expected, actual;
-        x = 14;
-        expected = "e";
-        actual = calc.converteDecimalParaHexa (x);
-        assertEquals (expected, actual);
-    }
+ @Test
+ void testGetLastResultValue()
+ {
+  //Arrange
 
-    @Test
-    public void testCalculateFatorial1()
-    {
-        Calculator c = new Calculator();
+  //Act
+  calc.apagarResultado();
+  double result = calc.getLastResultValue();
+  double expectedResult = 0;
+  //Assert
+  assertEquals(result, expectedResult);
+ }
 
-        long result = c.fatorial(10);
+ @Test
+ void testPotencia()
+ {
+  //Arrange
 
-        assertEquals(3628800, result);
-    }
+  //Act
+  double result = calc.potencia(3, 3);
+  double expectedResult = 27;
+  //Assert
+  assertEquals(result, expectedResult);
+ }
 
-    @Test
-    public void testCalculateFatorial2()
-    {
-        Calculator c = new Calculator();
+ @Test
+ void testBinaryToDecimal()
+ {
+  //Arrange
 
-        long result = c.fatorial(-5);
+  //Act
+  double result = calc.binaryToDecimal(100);
+  double expectedResult = 4;
+  //Assert
+  assertEquals(result, expectedResult);
+ }
 
+
+ @Test
+ void testSoma()
+ {
+  double y, x, expected, actual;
+  x = 10;
+  y = 5;
+  expected = 15;
+  actual = calc.somar(x, y);
+  assertEquals(expected, actual);
+ }
+
+ @Test
+ void testConverteDecimalParaHexaOneDigit ()
+ {
+  int x;
+  String expected, actual;
+  x = 14;
+  expected = "e";
+  actual = calc.converteDecimalParaHexa (x);
+  assertEquals (expected, actual);
+ }
+
+ @Test
+ void testConverteDecimalParaHexaMultipleDigit ()
+ {
+  int x;
+  String expected, actual;
+  x = 255;
+  expected = "ff";
+  actual = calc.converteDecimalParaHexa (x);
+  assertEquals (expected, actual);
+ }
+
+ @Test
+ public void testCalculateFatorial1()
+ {
+  Calculator c = new Calculator();
+
+  long result = c.fatorial(10);
+
+  assertEquals(3628800, result);
+ }
+
+ @Test
+ public void testCalculateFatorial2()
+ {
+  Calculator c = new Calculator();
+
+  long result = c.fatorial(-5);
+
+  assertEquals(-120, result);
+ }
+
+<<<<<<< HEAD
         assertEquals(-120, result);
     }
 
@@ -87,4 +155,6 @@ class CalculatorTest
         actual = calc.subtracao(n1,n2);
         assertEquals(expected,actual);
     }
+=======
+>>>>>>> 27a1017c41d7f8d04dcdc2480696ff6d83f36ba9
 }

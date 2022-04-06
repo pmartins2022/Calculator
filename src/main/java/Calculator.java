@@ -183,6 +183,4 @@ public class Calculator
   saveLastResult(z);
   return z;
  }
-
-
 }
