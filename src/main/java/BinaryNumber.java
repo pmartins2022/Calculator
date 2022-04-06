@@ -1,17 +1,40 @@
 public class BinaryNumber
 {
- private int value; // value = 1001      value = 1111
+ private int binaryValue;
 
  public BinaryNumber(int value)
  {
-  this.value = value;
+  this.binaryValue = value;
+ }
+
+
+ public int getValue()
+ {
+  return binaryValue;
+ }
+
+ public void setValue(int value)
+ {
+  this.binaryValue = value;
  }
 
  public int multiply(BinaryNumber binaryNumber)
  {
-  return Integer.parseInt(String.valueOf(this.value)) * Integer.parseInt(String.valueOf(binaryNumber.value));
+  int x = Integer.parseInt(String.valueOf(this.binaryValue), 2) * Integer.parseInt(String.valueOf(this.binaryValue), 2);
+  return Integer.parseInt(Integer.toBinaryString(x));
  }
 
+ public int sumBinaries(BinaryNumber number)
+ {
+  int x = Integer.parseInt(Integer.toBinaryString(this.binaryValue)) + Integer.parseInt(Integer.toBinaryString(number.getValue()));
+  return Integer.parseInt(Integer.toBinaryString(x));
+ }
+
+ public int subtraction(BinaryNumber binaryNumber)
+ {
+  int x = Integer.parseInt(Integer.toBinaryString(this.binaryValue)) - Integer.parseInt(Integer.toBinaryString(binaryNumber.getValue()));
+  return Integer.parseInt(Integer.toBinaryString(x));
+ }
 
 }
 
