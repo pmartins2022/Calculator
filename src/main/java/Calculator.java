@@ -65,7 +65,6 @@ public class Calculator {
         return t;
     }
 
-<<<<<<< HEAD
  public boolean cubosAlgarismos (double num)
  {
     boolean flag = false;
@@ -86,7 +85,6 @@ public class Calculator {
 
 }
 
-=======
 
     public long fatorial(double x) {
         int num = (int) x;
@@ -136,17 +134,20 @@ public class Calculator {
   return Integer.parseInt(binary);
  }
 
-    /**
-     * Calcula a potência do valor recebido pela variável x
-     *
-     * @param x número
-     * @param y potência
-     * @return potência do número
-     */
-    public double potencia(double x, int y) {
-        double z = Math.pow(x, y);
-        saveLastResult(z);
-        return z;
-    }
+
+ /**
+  * Calcula a potência do valor recebido pela variável x
+  *
+  * @param x número
+  * @param y potência
+  * @return potência do número
+  */
+ public double potencia(double x, int y)
+ {
+  double z = Math.pow(x, y);
+  saveLastResult(z);
+  return z;
+ }
+
 
 }
