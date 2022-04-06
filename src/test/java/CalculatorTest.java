@@ -79,6 +79,19 @@ class CalculatorTest
  }
 
  @Test
+ void testQuocienteNegativo()
+ {
+  //Arrange
+  double expectedResult = 0.3333333333333333;
+
+  //Act
+  double result = calc.potencia(3, -1);
+
+  //Assert
+  assertEquals(result, expectedResult);
+ }
+
+ @Test
  void testPotencia()
  {
   //Arrange
