@@ -122,9 +122,9 @@ public class MainCalculator
         System.out.println("7-Calcular fatorial de um numero inteiro");
         System.out.println("8-Verificar se um numero é primo");
         System.out.println("9-Verificar se o numero é a soma dos cubos dos digitos que o compõem");
-        System.out.println("10-Converter numero decimal para binário");
-        System.out.println("11-Converter número binário para decimal");
-        System.out.println("12-Converter número decimal para hexadecimal");
+        //System.out.println("10-Converter numero decimal para binário");
+        //System.out.println("11-Converter número binário para decimal");
+        //System.out.println("12-Converter número decimal para hexadecimal");
         System.out.println("Escolha a operação");
         
     }
