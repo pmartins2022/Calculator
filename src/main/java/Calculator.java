@@ -57,6 +57,7 @@ public class Calculator
  {
   double soma;
   soma = x + y;
+  saveLastResult(soma);
   return soma;
  }
 
@@ -67,7 +68,9 @@ public class Calculator
 
  public double quociente(double x, double y)
  {
-  return x/y;
+  double t = x/y;
+  saveLastResult(t);
+  return t;
  }
 
 }
