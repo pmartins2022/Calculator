@@ -10,9 +10,10 @@ public class Calculator {
         this.lastResultValue = lastResultValue;
     }
 
-
     /**
-     * Pessoal pode ser assim? No final de cada método onde ocorreu uma conta é só fazer this.lastResultValue = resulatado
+     * Devolve valor do atributo lastResultValue
+     *
+     * @return valor do atributo lastResultValue
      */
     public double getLastResultValue() {
         return lastResultValue;
