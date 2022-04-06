@@ -98,6 +98,10 @@ public class Calculator
  {
   int num = (int) x;
 
+  boolean negative = x < 0;
+
+  if (negative) num*=-1;
+
   long result = 1;
 
   while (num != 1)
@@ -107,7 +111,7 @@ public class Calculator
   }
 
   saveLastResult(result);
-  return result;
+  return negative ? result*-1 : result;
  }
 
 
