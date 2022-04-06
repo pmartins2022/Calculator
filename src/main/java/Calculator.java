@@ -109,6 +109,11 @@ public class Calculator
     }
 
 
+<<<<<<< HEAD
+    public int convertToBinary(int number){
+        String binary = ConversionUtils.decimalToBinary(number);
+        return Integer.parseInt(binary);
+=======
     /**
      * Calcula a potência do valor recebido pela variável x
      *
@@ -121,6 +126,7 @@ public class Calculator
         double z = Math.pow(x, y);
         saveLastResult(z);
         return z;
+>>>>>>> ec1ed0103c926c00d88427bd77df7003faeb5a43
     }
 
 }
