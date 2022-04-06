@@ -134,6 +134,26 @@ public class Calculator
   }
  }
 
+<<<<<<< HEAD
+    /**
+     * 10) Verifica se um número é primo ou não
+     *
+     * @param number número a verificar
+     * @return true se for primo, false se não for primo
+     */
+    public boolean isPrime(int number) {
+        boolean flag = true;
+        int x = 2;
+        while (number % x != 0 && x <= number / 2) {
+            x = x + 1;
+        }
+        if (x < number / 2) {
+            flag = false;
+        }
+        return flag;
+    }
+=======
+>>>>>>> d542c59b2843c2f30ac532896706c775c4b2351d
 
  /**
   * 12) Converte um número inteiro decimal para o seu equivalente binário
