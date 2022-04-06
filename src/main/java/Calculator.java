@@ -3,7 +3,6 @@ public class Calculator
     private double lastResultValue;
 
     /**
-<<<<<<< HEAD
      * 5) Guarda resultado da operação na variável last resultValue
      * @param lastResultValue resultado da última operação
      */
