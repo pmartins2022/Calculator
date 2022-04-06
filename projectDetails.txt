@@ -16,12 +16,11 @@ Conflitos
 }
 
 Sprint nº2
-Menu	- Paulo
+Menu- Paulo
 8	- Marta 
 9	- Pedro
 10	- Simao
 11	- Miguel
-
 12	- Simao
 13	- Marta
 14	- Zé
