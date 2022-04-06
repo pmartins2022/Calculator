@@ -119,11 +119,16 @@ public class Calculator {
          * @param y potência
          * @return potência do número
          */
-        public double potencia ( double x, int y)
+        public double potencia (double x, int y)
         {
             double z = Math.pow(x, y);
             saveLastResult(z);
             return z;
         }
+    }
+
+    public String converteDecimalParaHexa (int x)
+    {
+     return ConversionUtils.decimalToHex (x);
     }
 }
