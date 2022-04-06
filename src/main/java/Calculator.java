@@ -30,6 +30,7 @@ public class Calculator {
     public double produto(double n1, double n2) {
         double prod;
         prod = n1 * n2;
+        saveLastResult(prod);
         return prod;
     }
 
@@ -43,6 +44,7 @@ public class Calculator {
     public double subtracao(double n1, double n2) {
         double sub;
         sub = n1 - n2;
+        saveLastResult(sub);
         return sub;
     }
 
