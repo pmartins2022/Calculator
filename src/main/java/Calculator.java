@@ -1,14 +1,13 @@
 public class Calculator
 {
-<<<<<<< HEAD
  private double lastResultValue;
 
  /**
-  * Guarda resultado da operação na variável last resultValue
+  * 5) Guarda resultado da operação na variável last resultValue
   *
   * @param lastResultValue resultado da última operação
   */
- public void memorizarResultadoOperacao(double lastResultValue)
+ public void saveLastResult(double lastResultValue)
  {
   this.lastResultValue = lastResultValue;
  }
@@ -63,9 +62,8 @@ public class Calculator
   lastResultValue = Double.parseDouble(null);
  }
 }
-=======
-    private double lastResultValue;
 
+<<<<<<< HEAD
     /**
      * 5) Guarda resultado da operação na variável last resultValue
      * @param lastResultValue resultado da última operação
@@ -125,3 +123,5 @@ public class Calculator
     }
 }
 >>>>>>> f01e48d2fa9eebc3fcd1cc2b99ad747e45fb802e
+=======
+>>>>>>> 7cf11c9dd6def54bea5595506efe1a40706f751e
