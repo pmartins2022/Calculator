@@ -13,6 +13,11 @@ public class NumeroComplexo
         return new NumeroComplexo (this.x+n2.x, this.y+n2.y);
     }
 
+    public NumeroComplexo produto(NumeroComplexo n2)
+    {
+        return new NumeroComplexo(this.x*n2.x-this.y*n2.y,this.x*n2.y+n2.x*this.y);
+    }
+
     @Override
     public String toString ()
     {
