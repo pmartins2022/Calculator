@@ -73,4 +73,24 @@ public class Calculator
   return t;
  }
 
+ public boolean cubosAlgarismos (double num)
+ {
+    boolean flag = false;
+    int alg, copia, soma;
+    copia = num;
+    soma = 0;
+    while (num > 0)
+    {
+        alg = num % 10;
+        soma += Math.pow(alg, 3);
+        num = num / 10;
+    }
+    if (copia == soma)
+    {
+        flag = true;
+    }
+    return flag;
+
+}
+
 }
