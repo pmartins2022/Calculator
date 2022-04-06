@@ -6,39 +6,68 @@ public class MainCalculator
     public static void main(String[] args)
     {
 
+        Calculator calc = new Calculator();
         Scanner ler = new Scanner(System.in);
+        double res = 0;
         int opcao = 0;
         menu();
+        opcao = ler.nextInt();
+
 
         do
 
             switch (opcao) {
-                case 1:
+                case 1 -> {
+                    double x,y;
+                    System.out.println("**** Soma de dois números ******");
+                    System.out.println("**** Insira 1º número ");
+                    x=ler.nextDouble();
+                    System.out.println("**** Insira 2º número ");
+                    y=ler.nextDouble();
+                    res=calc.somar(x,y);
+                    }
 
-                    break;
-                case 2:
+                case 2 -> {
+                    double x,y;
+                    System.out.println("**** Produto de dois números ******");
+                    System.out.println("**** Insira 1º número ");
+                    x=ler.nextDouble();
+                    System.out.println("**** Insira 2º número ");
+                    y=ler.nextDouble();
+                    res=calc.produto(x,y);
+                     }
 
+                case 3 -> {
+                    double x,y;
+                    System.out.println("**** Subtração de dois números ******");
+                    System.out.println("**** Insira 1º número ");
+                    x=ler.nextDouble();
+                    System.out.println("**** Insira 2º número ");
+                    y=ler.nextDouble();
+                    res=calc.subtracao(x,y);
+                }
+                case 4 -> {
+                    double x,y;
+                    System.out.println("**** Quociente de dois números ******");
+                    System.out.println("**** Insira 1º número ");
+                    x=ler.nextDouble();
+                    System.out.println("**** Insira 2º número ");
+                    y=ler.nextDouble();
+                    res=calc.quociente(x,y);
+                }
+                case 6 -> {
+                    calc.getLastResultValue();
                     break;
-                case 3:
+                    }
 
+                case 7 -> {
+                    calc.apagarResultado();
                     break;
-                case 4:
+                }
 
-                    break;
-                case 5:
-
-                    break;
-                case 6:
-
-                    break;
-                case 7:
-
-                    break;
-                default:
-                    break;
             }
 
-        while (opcao<0 || opcao >7);
+        while (opcao<0 && opcao >7);
 
 
 
