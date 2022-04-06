@@ -57,12 +57,13 @@ public class Calculator
  {
   double soma;
   soma = x + y;
+  saveLastResult(soma);
   return soma;
  }
 
  public void apagarResultado()
  {
-  lastResultValue = Double.parseDouble(null);
+  lastResultValue = 0d;
  }
 
  public double quociente(double x, double y)

@@ -2,81 +2,66 @@ import java.util.Scanner;
 
 public class MainCalculator
 {
+    static Scanner ler = new Scanner(System.in);
+    static Calculator calc = new Calculator();
 
     public static void main(String[] args)
     {
-
-        Calculator calc = new Calculator();
-        Scanner ler = new Scanner(System.in);
-        double res = 0;
-        int opcao = 0;
-        menu();
-        opcao = ler.nextInt();
+        int opcao = -1;
 
 
-        do
+        while (opcao != 0)
+        {
+            menu();
+            opcao = ler.nextInt();
 
-            switch (opcao) {
+            switch (opcao)
+            {
                 case 1 -> {
-                    double x,y;
+                    double x, y;
                     System.out.println("**** Soma de dois números ******");
-                    System.out.println("**** Insira 1º número ");
-                    x=ler.nextDouble();
-                    System.out.println("**** Insira 2º número ");
-                    y=ler.nextDouble();
-                    res=calc.somar(x,y);
-                    }
+                    x = populateFirst();
+                    y = populateSecond();
+                    System.out.println(calc.somar(x, y));
+                }
 
                 case 2 -> {
-                    double x,y;
+                    double x, y;
                     System.out.println("**** Produto de dois números ******");
-                    System.out.println("**** Insira 1º número ");
-                    x=ler.nextDouble();
-                    System.out.println("**** Insira 2º número ");
-                    y=ler.nextDouble();
-                    res=calc.produto(x,y);
-                     }
+                    x = populateFirst();
+                    y = populateSecond();
+                    System.out.println(calc.produto(x, y));
+                }
 
                 case 3 -> {
-                    double x,y;
+                    double x, y;
                     System.out.println("**** Subtração de dois números ******");
-                    System.out.println("**** Insira 1º número ");
-                    x=ler.nextDouble();
-                    System.out.println("**** Insira 2º número ");
-                    y=ler.nextDouble();
-                    res=calc.subtracao(x,y);
+                    x = populateFirst();
+                    y = populateSecond();
+                    System.out.println(calc.subtracao(x, y));
                 }
                 case 4 -> {
-                    double x,y;
+                    double x, y;
                     System.out.println("**** Quociente de dois números ******");
-                    System.out.println("**** Insira 1º número ");
-                    x=ler.nextDouble();
-                    System.out.println("**** Insira 2º número ");
-                    y=ler.nextDouble();
-                    res=calc.quociente(x,y);
+                    x = populateFirst();
+                    y = populateSecond();
+                    System.out.println(calc.quociente(x, y));
                 }
-                case 6 -> {
-                    calc.getLastResultValue();
-                    break;
-                    }
 
                 case 7 -> {
                     calc.apagarResultado();
-                    break;
                 }
 
             }
-
-        while (opcao<0 && opcao >7);
-
-
-
+        }
     }
 
-    public static void menu(){
+    public static void menu()
+    {
 
         System.out.println("**********************");
         System.out.println("****CALCULADORA*****");
+        System.out.println("0 - SAIR");
         System.out.println("1-Soma de dois números");
         System.out.println("2-Produto de dois números");
         System.out.println("3-Subtração de dois números");
@@ -90,5 +75,41 @@ public class MainCalculator
 
     }
 
+    public static double populateFirst()
+    {
+        System.out.println("**** Insira 1º número ou ANS");
+        ler.nextLine();
+        String x = ler.nextLine();
+
+        double num1;
+
+        if (x.equalsIgnoreCase("ANS"))
+        {
+            num1 = calc.getLastResultValue();
+        } else
+        {
+            num1 = Double.parseDouble(x);
+        }
+
+        return num1;
+    }
+
+    private static double populateSecond()
+    {
+        System.out.println("**** Insira 2º número ou ANS");
+        String y = ler.nextLine();
+
+        double num2;
+
+        if (y.equalsIgnoreCase("ANS"))
+        {
+            num2 = calc.getLastResultValue();
+        } else
+        {
+            num2 = Double.parseDouble(y);
+        }
+
+        return num2;
+    }
 
 }
