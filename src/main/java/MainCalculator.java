@@ -48,9 +48,39 @@ public class MainCalculator
                     System.out.println(calc.quociente(x, y));
                 }
 
-                case 7 -> {
+                case 5 -> {
                     calc.apagarResultado();
                 }
+
+                case 6 -> {
+                    double x,y ;
+                    System.out.println("**** Potência de 1º número elevado ao 2ª número ******");
+                    x = populateFirst();
+                    y = populateSecond();
+                    System.out.println(calc.potencia(x, (int) y));
+                }
+
+                case 7 -> {
+                    double x ;
+                    System.out.println("**** Fatorial número Inteiro ******");
+                    x = populateFirst();
+                    System.out.println(calc.fatorial(x));
+                }
+
+                case 8 -> {
+                    double x ;
+                    System.out.println("**** Verificar se número Inteiro é primo ******");
+                    x = populateFirst();
+                    System.out.println(calc.isPrime((int) x));
+                }
+
+                case 9 -> {
+                    double x ;
+                    System.out.println("**** Verificar se número Inteiro é primo ******");
+                    x = populateFirst();
+                    System.out.println(calc.isPrime((int) x));
+                }
+
 
             }
         }
@@ -66,10 +96,14 @@ public class MainCalculator
         System.out.println("2-Produto de dois números");
         System.out.println("3-Subtração de dois números");
         System.out.println("4-Quociente de dois números");
-        System.out.println("5-Guardar Resultado em Memória");
-        System.out.println("6-Usar valor em Memória para outra operação");
-        System.out.println("7-Limpar Memória");
-
+        System.out.println("5-Limpar Memória");
+        System.out.println("6-Calcular o valor de x na potência de y");
+        System.out.println("7-Calcular fatorial de um numero inteiro");
+        System.out.println("8-Verificar se um numero é primo");
+        System.out.println("9-Verificar se o numero é a soma dos cubos dos digitos que o compõem");
+        System.out.println("10-Converter numero decimal para binário");
+        System.out.println("11-Converter número binário para decimal");
+        System.out.println("12-Converter número decimal para hexadecimal");
         System.out.println("Escolha a operação");
 
 

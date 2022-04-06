@@ -136,23 +136,6 @@ public class Calculator {
   return Integer.parseInt(binary);
  }
 
-
-<<<<<<< HEAD
- /**
-  * Calcula a potência do valor recebido pela variável x
-  *
-  * @param x número
-  * @param y potência
-  * @return potência do número
-  */
- public double potencia(double x, int y)
- {
-  double z = Math.pow(x, y);
-  saveLastResult(z);
-  return z;
- }
->>>>>>> 060874929b01280948103d68d15bc954c02fe65e
-=======
     /**
      * Calcula a potência do valor recebido pela variável x
      *
@@ -165,5 +148,5 @@ public class Calculator {
         saveLastResult(z);
         return z;
     }
->>>>>>> b9782d6c82780eae0f20605fae8d0626af44370c
+
 }
