@@ -68,11 +68,12 @@ public class Calculator
 
  public double quociente(double x, double y)
  {
-  double t = x/y;
+  double t = x / y;
   saveLastResult(t);
   return t;
  }
 
+<<<<<<< HEAD
  public boolean cubosAlgarismos (double num)
  {
     boolean flag = false;
@@ -93,4 +94,75 @@ public class Calculator
 
 }
 
+=======
+
+ public long fatorial(double x)
+ {
+  int num = (int) x;
+
+  long result = 1;
+
+  while (num != 1)
+  {
+   result = result * num;
+   num--;
+  }
+
+  saveLastResult(result);
+  return result;
+ }
+
+ /**
+  * 10) Verifica se um número é primo ou não
+  *
+  * @param number número a verificar
+  * @return true se for primo, false se não for primo
+  */
+ public boolean isPrime(int number)
+ {
+  boolean flag = true;
+  int x = 2;
+  while (number % x != 0 && x <= number / 2)
+  {
+   x = x + 1;
+  }
+  if (x < number / 2)
+  {
+   flag = false;
+   return flag;
+  } else
+  {
+   return flag;
+  }
+ }
+
+
+ /**
+  * 12) Converte um número inteiro decimal para o seu equivalente binário
+  *
+  * @param number o número a converter
+  * @return o seu equivalente em binário
+  */
+ public int convertToBinary(int number)
+ {
+  String binary = ConversionUtils.decimalToBinary(number);
+  saveLastResult(Integer.parseInt(binary));
+  return Integer.parseInt(binary);
+ }
+
+
+ /**
+  * Calcula a potência do valor recebido pela variável x
+  *
+  * @param x número
+  * @param y potência
+  * @return potência do número
+  */
+ public double potencia(double x, int y)
+ {
+  double z = Math.pow(x, y);
+  saveLastResult(z);
+  return z;
+ }
+>>>>>>> 060874929b01280948103d68d15bc954c02fe65e
 }
