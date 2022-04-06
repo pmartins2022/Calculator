@@ -74,6 +74,19 @@ public class MainCalculator
                     System.out.println(calc.isPrime((int) x));
                 }
 
+                case 9 -> {
+                    double x ;
+                    System.out.println("**** Verificar se o numero é a soma dos cubos dos digitos que o compõem ******");
+                    x = populateFirst();
+                    System.out.println(calc.cubosAlgarismos(x));
+                }
+
+                case 10 -> {
+                    double x ;
+                    System.out.println("**** Converter número decimal para binário ******");
+                    x = populateFirst();
+                    System.out.println(calc.convertToBinary((int) x));
+                }
 
 
 
@@ -96,12 +109,11 @@ public class MainCalculator
         System.out.println("7-Calcular fatorial de um numero inteiro");
         System.out.println("8-Verificar se um numero é primo");
         System.out.println("9-Verificar se o numero é a soma dos cubos dos digitos que o compõem");
-        System.out.println("10-Converter numero decimal para binário");
-        System.out.println("11-Converter número binário para decimal");
-        System.out.println("12-Converter número decimal para hexadecimal");
+        //System.out.println("10-Converter numero decimal para binário");
+        //System.out.println("11-Converter número binário para decimal");
+        //System.out.println("12-Converter número decimal para hexadecimal");
         System.out.println("Escolha a operação");
-
-
+        
     }
 
     public static double populateFirst()
