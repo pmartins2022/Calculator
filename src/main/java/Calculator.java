@@ -59,9 +59,12 @@ public class Calculator {
   return lastResultValue;
  }
 
- public double somar(int x, int y)
+
+ public double somar(double x, double y)
  {
-  return x+y;
+     double soma;
+     soma = x+y;
+  return soma;
  }
 
  public void apagarResultado()
