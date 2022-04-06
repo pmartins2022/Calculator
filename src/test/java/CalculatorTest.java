@@ -2,9 +2,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class CalculatorTest
 {
-
  Calculator calc = new Calculator();
 
 
@@ -215,5 +215,4 @@ class CalculatorTest
   actual = calc.subtracao(n1, n2);
   assertEquals(expected, actual);
  }
-
 }
