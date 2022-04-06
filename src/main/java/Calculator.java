@@ -68,9 +68,20 @@ public class Calculator
 
  public double quociente(double x, double y)
  {
-  double t = x/y;
+  double t = x / y;
   saveLastResult(t);
   return t;
+ }
+
+ /**
+  * Calcula a potência do valor recebido pela variável x
+  * @param x número
+  * @param y potência
+  * @return potência do número
+  */
+ public double potencia(double x, int y)
+ {
+  return Math.pow(x, y);
  }
 
 }
