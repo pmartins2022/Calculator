@@ -21,14 +21,23 @@ Menu- Paulo
 9	- Pedro
 10	- Simao
 11	- Miguel
+
+Reunião de fim de Sprint2
+{
+null
+}
+
+Sprint nº3
 12	- Simao
 13	- Marta
 14	- Zé
 
-Reunião de fim de Sprint2
+Reunião de fim de Sprint3
 {
-
+null
 }
 
-Sprint nº3
-null
+Sprint nº4
+{
+Testes Unitários- Cada 1 os seus
+}
