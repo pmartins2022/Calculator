@@ -1,7 +1,7 @@
 Sprint nº1
 Criar Repositório  -Pedro
 Criar Projeto- Pedro
-Menu 	-Paulo (7)
+Menu 	-Paulo
 1	-Zé
 2	-Miguel
 3	-Miguel
