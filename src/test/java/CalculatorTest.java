@@ -69,10 +69,10 @@ class CalculatorTest
  void testQuociente()
  {
   //Arrange
-  double expectedResult = 1;
+  double expectedResult = Double.POSITIVE_INFINITY;
 
   //Act
-  double result = calc.potencia(3, 0);
+  double result = calc.quociente(3, 0);
 
   //Assert
   assertEquals(result, expectedResult);
@@ -82,10 +82,10 @@ class CalculatorTest
  void testQuocienteNegativo()
  {
   //Arrange
-  double expectedResult = 0.3333333333333333;
+  double expectedResult = -3;
 
   //Act
-  double result = calc.potencia(3, -1);
+  double result = calc.quociente(3, -1);
 
   //Assert
   assertEquals(result, expectedResult);
