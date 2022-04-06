@@ -4,10 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest
 {
-<<<<<<< HEAD
-    Calculator calc = new Calculator ();
-
-=======
 
  Calculator calc = new Calculator();
 
@@ -55,7 +51,6 @@ class CalculatorTest
   assertEquals(expectedResult, result);
  }
 
->>>>>>> 43e9d9fdfd641dad98ad7b79c3a4ed6a92ddc5a4
 
  @Test
  void testGetLastResultValue()
@@ -151,18 +146,6 @@ class CalculatorTest
   assertEquals(-120, result);
  }
 
-<<<<<<< HEAD
-    @Test
-    void testProduto (){
-        double n1,n2,expected, actual;
-        n1 = 10;
-        n2 = 5;
-        expected = 15;
-        actual = calc.produto(n1,n2);
-        assertEquals(expected,actual);
-    }
-=======
-
  @Test
  void testProduto()
  {
@@ -173,7 +156,6 @@ class CalculatorTest
   actual = calc.produto(n1, n2);
   assertEquals(expected, actual);
  }
->>>>>>> 43e9d9fdfd641dad98ad7b79c3a4ed6a92ddc5a4
 
  @Test
  void testSubtracaoInteiros()
@@ -203,21 +185,11 @@ class CalculatorTest
   double n1, n2, expected, actual;
   n1 = 0.5f;
   n2 = 2.25f;
-  expected = 1.75f;
+  expected = -1.75f;
   actual = calc.subtracao(n1, n2);
   assertEquals(expected, actual);
  }
 
-<<<<<<< HEAD
-    @Test
-    void testSubtracaoResultadoNegativo (){
-        double n1,n2,expected, actual;
-        n1 = 0.5f;
-        n2 = 2.25f;
-        expected = 1.75f;
-        actual = calc.subtracao(n1,n2);
-        assertEquals(expected,actual);
-    }
 
     @Test
     void testCubosAlgarismosFalse (){
@@ -238,6 +210,5 @@ class CalculatorTest
         actual = calc.cubosAlgarismos(n1);
         assertEquals(expected,actual);
     }
-=======
->>>>>>> 43e9d9fdfd641dad98ad7b79c3a4ed6a92ddc5a4
+
 }
