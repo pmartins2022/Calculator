@@ -114,10 +114,8 @@ public class Calculator {
         }
         if (x < number / 2) {
             flag = false;
-            return flag;
-        } else {
-            return flag;
         }
+        return flag;
     }
 
     
