@@ -124,6 +124,7 @@ public class Calculator
  public int convertToBinary(int number)
  {
   String binary = ConversionUtils.decimalToBinary(number);
+  saveLastResult(Integer.parseInt(binary));
   return Integer.parseInt(binary);
  }
 
