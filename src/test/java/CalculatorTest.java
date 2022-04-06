@@ -131,7 +131,6 @@ class CalculatorTest {
         assertEquals(-120, result);
     }
 
-
     @Test
     void testProduto() {
         double n1, n2, expected, actual;
@@ -167,8 +166,39 @@ class CalculatorTest {
         double n1, n2, expected, actual;
         n1 = 0.5f;
         n2 = 2.25f;
-        expected = 1.75f;
+        expected = -1.75f;
         actual = calc.subtracao(n1, n2);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void testConverteDecimalParaHexa() {
+        int x;
+        String expected, actual;
+        x = 14;
+        expected = "e";
+        actual = calc.converteDecimalParaHexa(x);
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    void testCubosAlgarismosFalse() {
+        int n1;
+        boolean expected, actual;
+        n1 = 100;
+        expected = false;
+        actual = calc.cubosAlgarismos(n1);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void testCubosAlgarismosTrue() {
+        int n1;
+        boolean expected, actual;
+        n1 = 153;
+        expected = true;
+        actual = calc.cubosAlgarismos(n1);
         assertEquals(expected, actual);
     }
 }
