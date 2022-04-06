@@ -73,4 +73,20 @@ public class Calculator
   return t;
  }
 
+ public long fatorial(double x)
+ {
+  int num = (int)x;
+
+  long result = 1;
+
+  while (num != 1)
+  {
+   result = result*num;
+   num--;
+  }
+
+  saveLastResult(result);
+  return result;
+ }
+
 }
