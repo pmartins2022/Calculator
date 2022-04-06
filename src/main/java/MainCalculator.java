@@ -78,7 +78,7 @@ public class MainCalculator
                     double x ;
                     System.out.println("**** Verificar se o numero é a soma dos cubos dos digitos que o compõem ******");
                     x = populateFirst();
-                    System.out.println(calc.cubosAlgarismos(x));
+                    System.out.println(calc.cubosAlgarismos((int)x));
                 }
 
                 case 10 -> {
