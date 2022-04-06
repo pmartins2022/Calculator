@@ -83,7 +83,7 @@ public class Calculator {
 
  public void apagarResultado()
  {
-  lastResultValue = Double.parseDouble (null);
+     lastResultValue = 0;
  }
 =======
     public double getLastResultValue()
