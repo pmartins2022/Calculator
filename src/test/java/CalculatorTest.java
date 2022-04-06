@@ -204,7 +204,7 @@ class CalculatorTest
   double n1, n2, expected, actual;
   n1 = 10;
   n2 = 5;
-  expected = 15;
+  expected = 50;
   actual = calc.produto(n1, n2);
   assertEquals(expected, actual);
  }
@@ -224,9 +224,9 @@ class CalculatorTest
  void testSubtracaoReais()
  {
   double n1, n2, expected, actual;
-  n1 = 10.97f;
-  n2 = 0.12f;
-  expected = 10.85f;
+  n1 = 10.96d;
+  n2 = 0.13d;
+  expected = 10.83d;
   actual = calc.subtracao(n1, n2);
   assertEquals(expected, actual);
  }
@@ -235,9 +235,9 @@ class CalculatorTest
  void testSubtracaoResultadoNegativo()
  {
   double n1, n2, expected, actual;
-  n1 = 0.5f;
-  n2 = 2.25f;
-  expected = -1.75f;
+  n1 = 0.5d;
+  n2 = 2.25d;
+  expected = -1.75d;
   actual = calc.subtracao(n1, n2);
   assertEquals(expected, actual);
  }
