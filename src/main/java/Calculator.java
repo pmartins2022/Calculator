@@ -33,7 +33,7 @@ public class Calculator
     {
         double prod;
         prod = n1 * n2;
-        return prod;
+        return this.lastResultValue = prod;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Calculator
     {
         double sub;
         sub = n1 - n2;
-        return sub;
+        return this.lastResultValue = sub;
     }
 
     public double somar(double x, double y)
