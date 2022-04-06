@@ -1,5 +1,4 @@
-public class Calculator
-{
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -8,6 +7,28 @@ public class Calculator
      * @param n2 numero fornecido em segundo lugar
      * @return produto de n1 com n2
      */
+=======
+public class Calculator {
+
+    private double lastResultValue;
+
+    /**
+     * Guarda resultado da operação na variável last resultValue
+     */
+    public void memorizarResultadoOperacao(double lastResultValue) {
+        this.lastResultValue = lastResultValue;
+    }
+
+
+    /**
+     * Pessoal pode ser assim? No final de cada método onde ocorreu uma conta é só fazer this.lastResultValue = resulatado
+     */
+    public double getLastResultValue() {
+        return lastResultValue;
+    }
+
+    
+>>>>>>> 8fd0c3b69099a73c91209cccdda5d88b7279da90
     public double produto (double n1, double n2){
         double prod;
         prod=n1*n2;
@@ -25,6 +46,7 @@ public class Calculator
         sub=n1-n2;
         return sub;
     }
+<<<<<<< HEAD
 
     private double lastResultValue;
 
@@ -35,4 +57,6 @@ public class Calculator
     {
         return lastResultValue;
     }
+=======
+>>>>>>> 8fd0c3b69099a73c91209cccdda5d88b7279da90
 }
