@@ -237,7 +237,7 @@ class CalculatorTest
   double n1, n2, expected, actual;
   n1 = 0.5f;
   n2 = 2.25f;
-  expected = 1.75f;
+  expected = -1.75f;
   actual = calc.subtracao(n1, n2);
   assertEquals(expected, actual);
  }
