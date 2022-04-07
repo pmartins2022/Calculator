@@ -221,7 +221,7 @@ public class MainCalculator
     public static String populateSecondStr()
     {
         System.out.println("**** Insira 2º número");
-        ler.nextLine();
+
         String x = ler.nextLine();
         return x;
     }
