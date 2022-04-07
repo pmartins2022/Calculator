@@ -98,28 +98,47 @@ public class MainCalculator
                     x = populateFirst();
                     System.out.println(calc.converteDecimalParaHexa ((int) x));
                 }
-                case 15 -> {
+                case 19 -> {
                     System.out.println("**** Soma de dois números hexadecimais ******");
                     Hexadecimal x = new Hexadecimal(populateFirstStr());
                     Hexadecimal y = new Hexadecimal(populateSecondStr());
-                    //Hexadecimal soma = x.somaHexadecimal(y);
-                    System.out.println();
+                    Hexadecimal soma = x.somaHexadecimal(y);
+                    System.out.println(soma);
                 }
-                case 16 -> {
+                case 20 -> {
                     System.out.println("**** Produto de dois números hexadecimais ******");
                     Hexadecimal x = new Hexadecimal(populateFirstStr());
                     Hexadecimal y = new Hexadecimal(populateSecondStr());
-                    Hexadecimal soma = x.produtoHexadecimal(y);
-                    System.out.println();
+                    Hexadecimal produto = x.produtoHexadecimal(y);
+                    System.out.println(produto);
                 }
-                case 17 -> {
+                case 21 -> {
                     System.out.println("**** Subtração de dois números hexadecimais ******");
                     Hexadecimal x = new Hexadecimal(populateFirstStr());
                     Hexadecimal y = new Hexadecimal(populateSecondStr());
-                    //Hexadecimal soma = x.subtracaoHexadecimal(y);
-                    System.out.println();
+                    Hexadecimal sub = x.subtracaoHexadecimal(y);
+                    System.out.println(sub);
                 }
-
+                case 23 -> {
+                    System.out.println("**** Soma números complexos ******");
+                    double x = populateFirst();
+                    double y = populateSecond();
+                    NumeroComplexo nc1 = new NumeroComplexo(x,y);
+                    double x2 = populateFirst();
+                    double y2 = populateSecond();
+                    NumeroComplexo nc2 = new NumeroComplexo(x2,y2);
+                    System.out.println(nc1.somar(nc2));
+                }
+                case 24 -> {
+                    System.out.println("**** Produto de números complexos ******");
+                    double x = populateFirst();
+                    double y = populateSecond();
+                    NumeroComplexo nc1 = new NumeroComplexo(x,y);
+                    double x2 = populateFirst();
+                    double y2 = populateSecond();
+                    NumeroComplexo nc2 = new NumeroComplexo(x2,y2);
+                    System.out.println(nc1.produto(nc2));
+                }
             }
         }
     }
@@ -193,7 +212,7 @@ public class MainCalculator
 
     public static String populateFirstStr()
     {
-        System.out.println("**** Insira 1º hexadecimal");
+        System.out.println("**** Insira 1º número");
         ler.nextLine();
         String x = ler.nextLine();
         return x;
@@ -201,7 +220,7 @@ public class MainCalculator
 
     public static String populateSecondStr()
     {
-        System.out.println("**** Insira 2º hexadecimal");
+        System.out.println("**** Insira 2º número");
         ler.nextLine();
         String x = ler.nextLine();
         return x;

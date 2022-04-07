@@ -35,6 +35,8 @@ public class BinaryNumber {
         return binaryValue;
     }
 
+
+    @Override
     public boolean equals(Object object) {
         if (this == object) {
             return true;
