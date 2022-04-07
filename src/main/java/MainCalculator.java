@@ -240,10 +240,6 @@ public class MainCalculator
     public static String populateSecondStr()
     {
         System.out.println("**** Insira 2º número");
-<<<<<<< HEAD
-
-=======
->>>>>>> bd0a85ba0cf2b248fba35eb723967ff677f57cad
         String x = ler.nextLine();
         return x;
     }
