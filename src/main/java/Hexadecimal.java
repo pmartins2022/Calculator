@@ -39,7 +39,10 @@ public class Hexadecimal {
         return new Hexadecimal(ConversionUtils.decimalToHex(soma));
     }
 
-
+    public Hexadecimal subtracaoHexadecimal (Hexadecimal outro){
+        int soma = Integer.parseInt(this.num,16)-Integer.parseInt(outro.num,16);
+        return new Hexadecimal(ConversionUtils.decimalToHex(soma));
+    }
 
 
 

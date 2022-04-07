@@ -4,7 +4,6 @@ public class MainCalculator
 {
     static Scanner ler = new Scanner(System.in);
     static Calculator calc = new Calculator();
-    static Hexadecimal hexa = new Hexadecimal();
 
     public static void main(String[] args)
     {
@@ -199,7 +198,7 @@ public class MainCalculator
         System.out.println("**** Insira 1º hexadecimal");
         ler.nextLine();
         String x = ler.nextLine();
-        return num1;
+        return x;
     }
 
     public static String populateSecondStr()
@@ -207,6 +206,6 @@ public class MainCalculator
         System.out.println("**** Insira 2º hexadecimal");
         ler.nextLine();
         String x = ler.nextLine();
-        return num2;
+        return x;
     }
 }

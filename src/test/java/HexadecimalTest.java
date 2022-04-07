@@ -19,11 +19,13 @@ class HexadecimalTest {
     }
 
     @Test
-    void somaHexadecimal(){
-        Hexadecimal n1 = new Hexadecimal("9");
-        Hexadecimal n2 = new Hexadecimal("a");
-        Hexadecimal expected = new Hexadecimal("13");
-        Hexadecimal actual = n1.somaHexadecimal(n2);
+    void subtracaoHexadecimal(){
+        Hexadecimal n1 = new Hexadecimal("bc");
+        Hexadecimal n2 = new Hexadecimal("4");
+        Hexadecimal expected = new Hexadecimal("b8");
+        Hexadecimal actual = n1.subtracaoHexadecimal(n2);
         assertEquals(expected,actual);
     }
+
+
 }
