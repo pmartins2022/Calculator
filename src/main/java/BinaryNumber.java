@@ -31,9 +31,9 @@ public class BinaryNumber
     }
 
     public BinaryNumber subtraction(BinaryNumber binaryNumber) {
-        int sum= ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue)) -
+        int sub= ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue)) -
                 ConversionUtils.binaryToDecimal(Integer.parseInt(binaryNumber.getBinaryValue()));
-        return new BinaryNumber(ConversionUtils.decimalToBinary(sum));
+        return new BinaryNumber(ConversionUtils.decimalToBinary(sub));
     }
 
     public String toString() {
