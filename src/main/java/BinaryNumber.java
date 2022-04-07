@@ -1,39 +1,38 @@
 public class BinaryNumber
 {
- private int binaryValue;
+ private String binaryValue;
 
- public BinaryNumber(int value)
+ public BinaryNumber(String value)
  {
   this.binaryValue = value;
  }
 
-
- public int getValue()
+ public String getValue()
  {
   return binaryValue;
  }
 
- public void setValue(int value)
+ public void setValue(String value)
  {
   this.binaryValue = value;
  }
 
- public int multiply(BinaryNumber binaryNumber)
+ public BinaryNumber multiply(BinaryNumber binaryNumber)
  {
-  int x = Integer.parseInt(String.valueOf(this.binaryValue), 2) * Integer.parseInt(String.valueOf(this.binaryValue), 2);
-  return Integer.parseInt(Integer.toBinaryString(x));
+  return new BinaryNumber(String.valueOf(ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue))
+          * ConversionUtils.binaryToDecimal(Integer.parseInt(binaryNumber.binaryValue))));
  }
 
- public int sumBinaries(BinaryNumber number)
+ public BinaryNumber sumBinaries(BinaryNumber number)
  {
-  int x = Integer.parseInt(Integer.toBinaryString(this.binaryValue)) + Integer.parseInt(Integer.toBinaryString(number.getValue()));
-  return Integer.parseInt(Integer.toBinaryString(x));
+  return new BinaryNumber(String.valueOf(Integer.parseInt(Integer.toBinaryString(Integer.parseInt(this.binaryValue))) +
+          Integer.parseInt(Integer.toBinaryString(number.getValue()))));
  }
 
- public int subtraction(BinaryNumber binaryNumber)
+ public BinaryNumber subtraction(BinaryNumber binaryNumber)
  {
-  int x = Integer.parseInt(Integer.toBinaryString(this.binaryValue)) - Integer.parseInt(Integer.toBinaryString(binaryNumber.getValue()));
-  return Integer.parseInt(Integer.toBinaryString(x));
+  return new BinaryNumber(String.valueOf(ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue))
+          - ConversionUtils.binaryToDecimal(Integer.parseInt(binaryNumber.binaryValue))));
  }
 
 }
