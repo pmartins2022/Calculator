@@ -93,15 +93,19 @@ public class MainCalculator
                     System.out.println("**** Converter número binário para decimal ******");
                     x = populateFirst();
                     System.out.println (calc.binaryToDecimal ((int) x));
-
-
                 }
-
                 case 12 -> {
                     double x ;
                     System.out.println("**** Converter número decimal para hexadecimal ******");
                     x = populateFirst();
                     System.out.println(calc.converteDecimalParaHexa ((int) x));
+                }
+                case 15 -> {
+                    double x,y ;
+                    System.out.println("**** Potência de 1º número elevado ao 2ª número ******");
+                    x = populateFirst();
+                    y = populateSecond();
+                    System.out.println(calc.potencia(x, (int) y));
                 }
             }
         }
@@ -125,6 +129,14 @@ public class MainCalculator
         System.out.println("10-Converter numero decimal para binário");
         System.out.println("11-Converter número binário para decimal");
         System.out.println("12-Converter número decimal para hexadecimal");
+        System.out.println("15-Soma de dois binários");
+        System.out.println("16-Produto de dois binários");
+        System.out.println("17-Subtração de dois binários");
+        System.out.println("19-Soma de dois números hexadecimais");
+        System.out.println("20-Produto de dois números hexadecimais");
+        System.out.println("21-Subtração de dois números hexadecimais");
+        System.out.println("23-Soma de dois números complexos");
+        System.out.println("24-Produto de dois números complexos");
         System.out.println("Escolha a operação");
         
     }
