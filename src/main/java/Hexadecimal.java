@@ -18,8 +18,7 @@ public class Hexadecimal {
 
     @Override
     public String toString() {
-        return "Hexadecimal{" +
-                "num=" + num +
+        return "Hexadecimal{" + "num=" + num +
                 '}';
     }
 
@@ -35,6 +34,14 @@ public class Hexadecimal {
         int prod = Integer.parseInt(this.num,16) * Integer.parseInt(outro.num, 16) ;
         return new Hexadecimal(ConversionUtils.decimalToHex(prod));
     }
+
+    public Hexadecimal subtracaoHexadecimal(Hexadecimal outro) {
+        int sub = Integer.parseInt(this.num, 16) - Integer.parseInt(outro.num, 16);
+        return new Hexadecimal(ConversionUtils.decimalToHex(sub));
+    }
+
+
+
 
 
 

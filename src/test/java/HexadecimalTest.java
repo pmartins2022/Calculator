@@ -17,4 +17,19 @@ class HexadecimalTest {
         assertEquals(expected, res);
 
     }
+
+
+    @Test
+    void subtracaoHexadecimal() {
+        //Arrange
+        Hexadecimal n1 = new Hexadecimal("bc");
+        Hexadecimal n2 = new Hexadecimal ("4");
+        Hexadecimal expected = new Hexadecimal ("b8");
+
+        //Act
+        Hexadecimal res = n1.subtracaoHexadecimal(n2);
+        //Assert
+        assertEquals(expected, res);
+
+    }
 }
