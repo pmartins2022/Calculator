@@ -27,5 +27,14 @@ class HexadecimalTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    void somaHexadecimal(){
+        Hexadecimal n1 = new Hexadecimal("9");
+        Hexadecimal n2 = new Hexadecimal("a");
+        Hexadecimal expected = new Hexadecimal("13");
+        Hexadecimal actual = n1.somaHexadecimal(n2);
+        assertEquals(expected,actual);
+    }
+
 
 }
