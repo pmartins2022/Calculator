@@ -23,17 +23,13 @@ public class BinaryNumber {
     }
 
     public BinaryNumber multiply(BinaryNumber binaryNumber) {
-        int sum = ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue)) *
+        int multiply = ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue)) *
                 ConversionUtils.binaryToDecimal(Integer.parseInt(binaryNumber.getBinaryValue()));
-        return new BinaryNumber(ConversionUtils.decimalToBinary(sum));
+        return new BinaryNumber(ConversionUtils.decimalToBinary(multiply));
     }
 
     public BinaryNumber subtraction(BinaryNumber binaryNumber) {
-<<<<<<< HEAD
-        int sum = ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue)) -
-=======
         int sub= ConversionUtils.binaryToDecimal(Integer.parseInt(this.binaryValue)) -
->>>>>>> 64d75ac282b20c21a4efbfc78177a3f9830fd0be
                 ConversionUtils.binaryToDecimal(Integer.parseInt(binaryNumber.getBinaryValue()));
         return new BinaryNumber(ConversionUtils.decimalToBinary(sub));
     }
