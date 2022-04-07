@@ -4,8 +4,6 @@ public class MainCalculator
 {
     static Scanner ler = new Scanner(System.in);
     static Calculator calc = new Calculator();
-    //static Hexadecimal hexa;
-    static NumeroComplexo nc;
 
     public static void main(String[] args)
     {
@@ -216,7 +214,7 @@ public class MainCalculator
 
     public static String populateFirstStr()
     {
-        System.out.println("**** Insira 1º hexadecimal");
+        System.out.println("**** Insira 1º número");
         ler.nextLine();
         String x = ler.nextLine();
         return x;
@@ -224,7 +222,7 @@ public class MainCalculator
 
     public static String populateSecondStr()
     {
-        System.out.println("**** Insira 2º hexadecimal");
+        System.out.println("**** Insira 2º número");
         ler.nextLine();
         String x = ler.nextLine();
         return x;
