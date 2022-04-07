@@ -4,6 +4,7 @@ public class MainCalculator
 {
     static Scanner ler = new Scanner(System.in);
     static Calculator calc = new Calculator();
+    static Hexadecimal hexa = new Hexadecimal();
 
     public static void main(String[] args)
     {
@@ -101,12 +102,27 @@ public class MainCalculator
                     System.out.println(calc.converteDecimalParaHexa ((int) x));
                 }
                 case 15 -> {
-                    double x,y ;
-                    System.out.println("**** Potência de 1º número elevado ao 2ª número ******");
-                    x = populateFirst();
-                    y = populateSecond();
-                    System.out.println(calc.potencia(x, (int) y));
+                    System.out.println("**** Soma de dois números hexadecimais ******");
+                    Hexadecimal x = new Hexadecimal(populateFirstStr());
+                    Hexadecimal y = new Hexadecimal(populateSecondStr());
+                    //Hexadecimal soma = x.somaHexadecimal(y);
+                    System.out.println();
                 }
+                case 16 -> {
+                    System.out.println("**** Produto de dois números hexadecimais ******");
+                    Hexadecimal x = new Hexadecimal(populateFirstStr());
+                    Hexadecimal y = new Hexadecimal(populateSecondStr());
+                    Hexadecimal soma = x.produtoHexadecimal(y);
+                    System.out.println();
+                }
+                case 17 -> {
+                    System.out.println("**** Subtração de dois números hexadecimais ******");
+                    Hexadecimal x = new Hexadecimal(populateFirstStr());
+                    Hexadecimal y = new Hexadecimal(populateSecondStr());
+                    //Hexadecimal soma = x.subtracaoHexadecimal(y);
+                    System.out.println();
+                }
+
             }
         }
     }
@@ -178,4 +194,19 @@ public class MainCalculator
         return num2;
     }
 
+    public static String populateFirstStr()
+    {
+        System.out.println("**** Insira 1º hexadecimal");
+        ler.nextLine();
+        String x = ler.nextLine();
+        return num1;
+    }
+
+    public static String populateSecondStr()
+    {
+        System.out.println("**** Insira 2º hexadecimal");
+        ler.nextLine();
+        String x = ler.nextLine();
+        return num2;
+    }
 }
