@@ -18,9 +18,7 @@ public class Hexadecimal {
 
     @Override
     public String toString() {
-        return "Hexadecimal{" +
-                "num=" + num +
-                '}';
+        return "num: " + num;
     }
 
     @Override
@@ -36,7 +34,10 @@ public class Hexadecimal {
         return new Hexadecimal(ConversionUtils.decimalToHex(prod));
     }
 
-
+    public Hexadecimal somaHexadecimal (Hexadecimal outro){
+        int soma = Integer.parseInt(this.num,16)+Integer.parseInt(outro.num,16);
+        return new Hexadecimal(ConversionUtils.decimalToHex(soma));
+    }
 
 
 
