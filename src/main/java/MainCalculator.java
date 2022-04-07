@@ -100,6 +100,25 @@ public class MainCalculator
                     x = populateFirst();
                     System.out.println(calc.converteDecimalParaHexa ((int) x));
                 }
+                case 15 -> {
+                    System.out.println("**** Soma de dois binários ******");
+                    BinaryNumber x = new BinaryNumber (populateFirstStr());
+                    BinaryNumber y = new BinaryNumber (populateSecondStr());
+                    System.out.println(x.sum (y));
+                }
+                case 16 -> {
+                    System.out.println("**** Produto de dois binários ******");
+                    BinaryNumber x = new BinaryNumber (populateFirstStr());
+                    BinaryNumber y = new BinaryNumber (populateSecondStr());
+                    System.out.println(x.multiply (y));
+                }
+                case 17 -> {
+                    System.out.println("**** Subtração de dois binários  ******");
+
+                    BinaryNumber x = new BinaryNumber (populateFirstStr());
+                    BinaryNumber y = new BinaryNumber (populateSecondStr());
+                    System.out.println(x.subtraction (y));
+                }
                 case 19 -> {
                     System.out.println("**** Soma de dois números hexadecimais ******");
                     Hexadecimal x = new Hexadecimal(populateFirstStr());
@@ -223,7 +242,6 @@ public class MainCalculator
     public static String populateSecondStr()
     {
         System.out.println("**** Insira 2º número");
-        ler.nextLine();
         String x = ler.nextLine();
         return x;
     }
