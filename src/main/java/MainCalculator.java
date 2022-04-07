@@ -8,8 +8,6 @@ public class MainCalculator
     public static void main(String[] args)
     {
         int opcao = -1;
-
-
         while (opcao != 0)
         {
             menu();
