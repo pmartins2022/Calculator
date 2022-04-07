@@ -21,7 +21,7 @@ public class NumeroComplexo
     @Override
     public String toString ()
     {
-        return x+" + "+y+"i";
+        return x +( y > 0 ? " + "+y: y < 0 ? " " +y:" + ")+"i";
     }
 
     @Override
